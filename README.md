@@ -4,7 +4,6 @@ Offensive ELK is a custom Elasticsearch setup, aiming to show how traditional �
 
 In particular, Elasticsearch offers the chance to aggregate a multitude of disparate data sources, query them with a unified interface, with the aim of extracting actionable knowledge from a huge amount of unclassified data.
 
-A full walkthrough that led me to this setup can be found at: [https://www.marcolancini.it/2018/blog-elk-for-nmap/](https://www.marcolancini.it/2018/blog-elk-for-nmap/).
 
 
 
@@ -12,11 +11,11 @@ A full walkthrough that led me to this setup can be found at: [https://www.marco
 
 1. Clone this repository:
 ```
-❯ git clone https://github.com/marco-lancini/docker_offensive_elk.git
+❯ git clone https://github.com/jijeesh/docker-elk-stack.git
 ```
 2. Create the `_data` folder and ensure it is owned by your own user:
 ```
-❯ cd docker_offensive_elk/
+❯ cd docker-elk-stack/
 ❯ mkdir ./_data/
 ❯ sudo chown -R <user>:<user> ./_data/
 ```
@@ -36,16 +35,16 @@ docker-elk ❯ docker-compose up -d
 ❯ curl -XPUT 'localhost:9200/nmap-vuln-to-es'
 ```
 2. Open Kibana in your browser ([http://localhost:5601](http://localhost:5601)) and you should be presented with the screen below:
-<img src="https://www.marcolancini.it/images/posts/blog_elk_index1.png">
+<img src="images/blog_elk_index1.png">
 
 3. Insert `nmap*` as index pattern and press "_Next Step_":
-<img src="https://www.marcolancini.it/images/posts/blog_elk_index2.png">
+<img src="images/blog_elk_index2.png">
 
 4. Choose "_I don't want to use the Time Filter_", then click on "_Create Index Pattern_":
-<img src="https://www.marcolancini.it/images/posts/blog_elk_index3.png">
+<img src="images/blog_elk_index3.png">
 
-5. If everything goes well you should be presented with a page that lists every field in the `nmap*` index and the field's associated core type as recorded by Elasticsearch. 
-<img src="https://www.marcolancini.it/images/posts/blog_elk_index4.png">
+5. If everything goes well you should be presented with a page that lists every field in the `nmap*` index and the field's associated core type as recorded by Elasticsearch.
+<img src="images/blog_elk_index4.png">
 
 
 
