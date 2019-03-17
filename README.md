@@ -1,5 +1,5 @@
 # Offensive ELK: Elasticsearch for Offensive Security
-
+## [Enterprise edition moved to private ](https://github.com/jijeesh/ee-docker-elk-stack)
 Offensive ELK is a custom Elasticsearch setup, aiming to show how traditional “defensive” tools can be effectively used for offensive security data analysis, helping your team collaborate and triage scan results.
 
 In particular, Elasticsearch offers the chance to aggregate a multitude of disparate data sources, query them with a unified interface, with the aim of extracting actionable knowledge from a huge amount of unclassified data.
